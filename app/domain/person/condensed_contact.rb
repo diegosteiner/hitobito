@@ -41,7 +41,7 @@ class Person::CondensedContact
 
   attr_reader :base_contactable, :other_contactables
 
-  delegate(:country_label, :ignored_country?, *CONDENSABLE_ATTRIBUTES, to: :base_contactable)
+  delegate(:country_label, :country, :ignored_country?, *CONDENSABLE_ATTRIBUTES, to: :base_contactable)
 
   def initialize(base_contactable, contactables = [])
     @base_contactable = base_contactable
