@@ -8,7 +8,7 @@
 class Person::CondensedContact
 
   CONDENSABLE_ATTRIBUTES = [:address, :last_name, :company_name, :company?,
-                            :zip_code, :town, :country]
+                            :zip_code, :town]
 
   class << self
 
