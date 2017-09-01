@@ -203,7 +203,7 @@ class RolesController < CrudController
 
   def after_create_location(new_person)
     return_path ||
-      if new_person && entry.person && entry.person.persisted?
+      if entry.person && entry.person.persisted?
         group_person_path(entry.group_id, entry.person_id)
       else
         group_people_path(entry.group_id)
